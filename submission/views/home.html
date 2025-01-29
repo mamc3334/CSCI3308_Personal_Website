@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Generative AI Source: 
+    Claude.ai
+Prompt: 
+    Generate a barebones HTML home page for your website. It should meet the following requirements
+    * Create a Navigation Bar add links to the Home, Hobbies, and Projects pages.
+    * On the extreme right of the Navigation Bar add an icon, this can be an icon of your choice.
+    * Add an image of yourself on the page.
+    * Write a short description on the right of the image as shown.
+    * Add a link to the Resume page below the description (this should take you to resume.html).
+    * Add a footer with all social media links you would like to provide. Include at least one.
+    * Stylize using bootstrap
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="https://www.w3schools.com/html/html_intro.asp">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="../resources/img/profile_pic.jpeg" alt="Profile Picture" class="profile-img rounded shadow">
+            </div>
+            <div class="col-md-8">
+                <div class="card border-0 bg-light">
+                    <div class="card-body">
+                        <h1 class="card-title mb-4">Hello, I'm Mason!</h1>
+                        <p class="card-text lead">
+                            I am third year engingeering student at the University of Colorado Boulder. I am majoring in Electrical & Computer Engineering with a minor in Computer Science. 
+                            I plan on pursuing a Master of Science in Electrical Engineering focusing on embedded systems/programming through the BAM program at CU. I have experience in a variety of roles including mechanical, manufacturing, and software engineering internships. 
+                            Outside of school and work, I enjoy the outdoors, staying fit, and hanging out with my friends.
+                        </p>
+                        <a href="resume.html" class="btn btn-dark mt-3">
+                            <i class="fas fa-file-alt me-2"></i>View My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="social-links">
+                <a href="https://www.instagram.com/masonmcgaffin5/" class="text-white mx-2 text-decoration-none">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mason-mcgaffin/" class="text-white mx-2 text-decoration-none">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

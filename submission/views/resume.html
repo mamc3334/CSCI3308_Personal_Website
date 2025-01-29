@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+Generative AI Source:
+    Claude.ai
+Prompt:
+    Now generate a barebones HTML page in resume.html for my website. It should meet the following requirements
+    * Create a Navigation Bar add links to the Home, Hobbies, and Projects pages.
+    * On the extreme right of the Navigation Bar add an icon, this can be an icon of your choice.
+    * Add your resume (in the file attached) It could possbly be an HTML table or a series of divs.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mason McGaffin - Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .section-heading {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .resume-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .contact-info a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .contact-info a:hover {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="https://www.w3schools.com/html/html_intro.asp">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Content -->
+    <div class="container my-5">
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <div>
+                <h1 class="display-4 mb-3">Mason McGaffin
+                    
+                    <a style="float: right;" class="navbar-brand" href="../resources/resume.docx">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </h1>
+            </div>
+            <div class="contact-info">
+                <p class="mb-2">
+                    Castle Pines, CO | 
+                    <a href="tel:3039297633">(303) 929-7633</a> | 
+                    <a href="mailto:mcgaffin5mason@gmail.com">mcgaffin5mason@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/mason-mcgaffin/" target="_blank">linkedin.com/in/mason-mcgaffin/</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Summary of Qualifications -->
+        <div class="resume-section">
+            <h2 class="section-heading">Summary of Qualifications</h2>
+            <ul class="list-unstyled">
+                <li class="mb-2">• Experienced in Python, C, C++, CREO Parametric, System Verilog, Java, VECAMS, EPDM, SAP, MS Office Suite, Automation Framework, Visio, Arduino</li>
+                <li class="mb-2">• Software development for satellite real-time satellite data transmission</li>
+                <li class="mb-2">• Spacecraft test data mining and analysis for test optimization and risk management</li>
+                <li class="mb-2">• Spacecraft system schematic drawing utilizing connectivity data</li>
+                <li class="mb-2">• Preparing Manufacturing Work Instructions for box-level spacecraft electronics</li>
+                <li class="mb-2">• Bachelor of Electrical and Computer Engineering (Ant. 2026)</li>
+            </ul>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="resume-section">
+            <h2 class="section-heading">Relevant Work Experience</h2>
+            
+            <div class="mb-4">
+                <h3 class="h4">Lockheed Martin Space</h3>
+                
+                <div class="mb-4">
+                    <h4 class="h5">Software Engineer Intern - RTS</h4>
+                    <p class="text-muted">Fall 2023 -- Present</p>
+                    <ul>
+                        <li>Created comprehensive customer focused Interface Developer's Guide containing C++ and Python sample code, sample data, and system and subsystem overviews.</li>
+                        <li>Developed Python scripts to manipulate Gitlab pipeline and Regex variables.</li>
+                        <li>Produce code to fix bugs and implement improvements for Real-Time Transfer Service (RTS).</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="h5">Manufacturing Engineer Intern - SEC/RAC</h4>
+                    <p class="text-muted">Summer 2023</p>
+                    <ul>
+                        <li>Produced Manufacturing Work Instructions for multiple LM400 bus box-level electronics using VECAMS and MS PowerPoint.</li>
+                        <li>Designed tools using CREO Parametric to reduce connector tinning schedule time by over 70%.</li>
+                        <li>Developed a 50 page universal training guide for new employees to learn electronics manufacturing process from circuit card to top-level assembly.</li>
+                        <li>Installed and managed Thinaer tracking devices to improve traceability and assembly efficiency.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="h5">Mechanical Engineer Intern -- Artemis/ORION</h4>
+                    <p class="text-muted">Summer 2022</p>
+                    <ul>
+                        <li>Modeled connectivity data using Visio with team of LM & NASA interns, engineers, & subsystem managers.</li>
+                        <li>Received Next Gen Recognition "Evolving Our Culture" Award for training Engineering Aide optimization.</li>
+                        <li>Designed parts on Creo Parametric for spacecraft testing that reduced cost while maintaining test validity.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="h5">Mechanical Engineer Intern</h4>
+                    <p class="text-muted">Summer 2021</p>
+                    <ul>
+                        <li>Led team of 5 interns to develop solutions to consolidate $20 million software tools budget.</li>
+                        <li>STORM Program: Individual project supporting spacecraft system and test optimization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+            <h2 class="section-heading">Education</h2>
+            <h3 class="h4">University of Colorado, Boulder</h3>
+            <p class="mb-2">Bachelor of Science in Electrical and Computer Engineering; Minor in Computer Science</p>
+            <p class="mb-2">Anticipated Graduation: 2026</p>
+            <p class="mb-3">3.956 GPA, Engineering Honors Program</p>
+
+            <h4 class="h5 mb-3">Relevant Course Work:</h4>
+            <ul>
+                <li class="mb-2">Computer Science 2: IMDb Top 1000 Movies - Created a database using Skip List and Hash Table with user interface.</li>
+                <li class="mb-2">Digital/Analog Electronics: The BeatSeat - Semester long design project for Arduino system and electronic sensors.</li>
+                <li class="mb-2">Embedded Software Engineering: Embedded programming for ARM Cortex M4 microcontroller peripherals.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="social-links">
+                <a href="https://www.instagram.com/masonmcgaffin5/" class="text-white mx-2 text-decoration-none">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mason-mcgaffin/" class="text-white mx-2 text-decoration-none">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

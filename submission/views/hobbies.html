@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+Generative AI Source: 
+    Claude.AI
+Prompt:
+    Now Generate a barebones HTML page in hobbies.html for your website. The Hobbies HTML page in my personal website will contain cards with an image and a short description, lined up horizontally. It should meet the following requirements
+    * Create a Navigation Bar add links to the Home, Hobbies, and Projects pages.
+    * On the extreme right of the Navigation Bar add an icon, this can be an icon of your choice.
+    * Create a div that will contain all the cards for your hobbies.
+    * Create a horizontal list of min 3 Cards, each representing one of your top interests. In each card, include an image that represents the interest, a title of the interest, and why you like the interest.
+        * Apply the concept of Grids to get the cards in a row.
+    * Stylize using Bootstrap
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card {
+            height: 100%;
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="https://www.w3schools.com/html/html_intro.asp">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center mb-5">My Hobbies & Interests</h1>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Photography Card -->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="../resources/img/camping.jpeg" class="card-img-top" alt="Camping">
+                    <div class="card-body">
+                        <h5 class="card-title">Camping</h5>
+                        <p class="card-text">
+                            I really enjoy spending time outside in nature and escaping the business of civilized life. Camping is very peaceful for me and I enjoy being alone or with my friends in nature.
+                            I love sitting around the camp fire listening to downloaded music disconnected from the rest of the world. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chess Card -->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="../resources/img/soccer.jpeg" class="card-img-top" alt="Soccer">
+                    <div class="card-body">
+                        <h5 class="card-title">Soccer</h5>
+                        <p class="card-text">
+                            I have played soccer since I was young. I played travel team and high school soccer. Now in University, I continue to compete in intramural soccer all year round and play pick up whenever I have time. 
+                            I really enjoy the creativity and fitness aspect of the sport and it is a super fun way to stay in shape with friends or just goof around. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hiking Card -->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="../resources/img/skiing.jpeg" class="card-img-top" alt="Skiing">
+                    <div class="card-body">
+                        <h5 class="card-title">Skiing</h5>
+                        <p class="card-text">
+                            Skiing is my favorite passtime. It can be anything I need it ot be depending on how my life is going. It can be competition against my friends. It can be an internal competition trying to get better.
+                            It can also be a peaceful and beautiful escape just enjoying the bliss of carving a turn. Lastly, it can be a party - sending it big and having fun with friends. Skiing is a super important part of my life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="social-links">
+                <a href="https://www.instagram.com/masonmcgaffin5/" class="text-white mx-2 text-decoration-none">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mason-mcgaffin/" class="text-white mx-2 text-decoration-none">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
